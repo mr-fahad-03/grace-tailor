@@ -1,8 +1,8 @@
 import axios from "axios"
 
-// Create axios instance
+// Create axios instance with the deployed backend URL
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+  baseURL: import.meta.env.VITE_API_URL || "https://grace-tailor-backend.vercel.app/api",
 })
 
 // Add a request interceptor to add the auth token to every request

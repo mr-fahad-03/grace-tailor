@@ -4,8 +4,8 @@ import App from "./App"
 import "./index.css"
 import axios from "axios"
 
-// Set base URL for API requests
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || "http://localhost:5000"
+// Set base URL for API requests to the deployed backend
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || "https://grace-tailor-backend.vercel.app"
 
 // Add request interceptor for debugging
 axios.interceptors.request.use(

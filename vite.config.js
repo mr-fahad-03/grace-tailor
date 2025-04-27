@@ -14,7 +14,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://grace-tailor-backend.vercel.app/",
+        target: "https://grace-tailor-backend.vercel.app",
         changeOrigin: true,
       },
     },
