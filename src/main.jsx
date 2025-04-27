@@ -5,12 +5,16 @@ import "./index.css"
 import axios from "axios"
 
 // Set base URL for API requests to the deployed backend
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || "https://grace-tailor-backend.vercel.app"
+// Make sure there's no trailing slash
+const apiBaseUrl = import.meta.env.VITE_API_URL || "https://grace-tailor-backend.vercel.app"
+axios.defaults.baseURL = apiBaseUrl
 
 // Add request interceptor for debugging
 axios.interceptors.request.use(
   (config) => {
-    console.log(`Making ${config.method.toUpperCase()} request to: ${config.baseURL}${config.url}`)
+    // Log the complete URL being requested
+    const fullUrl = config.baseURL + config.url
+    console.log(`Making ${config.method.toUpperCase()} request to: ${fullUrl}`)
     return config
   },
   (error) => {

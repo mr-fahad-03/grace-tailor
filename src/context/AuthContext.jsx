@@ -38,11 +38,8 @@ export const AuthProvider = ({ children }) => {
       setError("")
       console.log("Attempting login with:", { email, password })
 
-      // Make sure we're using the correct URL
-      const apiUrl = axios.defaults.baseURL || "http://localhost:5000"
-      console.log("API URL:", apiUrl)
-
-      const res = await axios.post(`${apiUrl}/api/auth/login`, { email, password })
+      // Make the login request without concatenating the base URL
+      const res = await axios.post("/api/auth/login", { email, password })
       console.log("Login response:", res.data)
 
       localStorage.setItem("token", res.data.token)
