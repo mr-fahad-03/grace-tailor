@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #invoice,
+  #invoice * {
+    visibility: visible;
+  }
+  #invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px;
+  }
+  .print-hidden {
+    display: none !important;
+  }
+}
+
+/* Add bottom padding on mobile to account for the navigation bar */
+@media (max-width: 768px) {
+  .pb-safe {
+    padding-bottom: 5rem;
+  }
+}
