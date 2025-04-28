@@ -489,13 +489,6 @@ const Customers = () => {
             <Ruler size={18} className="mr-1" />
             Add Measurement
           </button>
-          <button
-            onClick={handleAddCustomer}
-            className="flex items-center px-4 py-2 bg-[#BCA784] text-[#28414C] rounded-md hover:bg-[#BCA784]/90"
-          >
-            <Plus size={18} className="mr-1" />
-            New Customer
-          </button>
         </div>
       </div>
 
