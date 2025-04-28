@@ -36,9 +36,9 @@ const OrderInvoice = ({ order, onClose }) => {
         <div id="invoice" className="border border-gray-200 p-6 print:border-0">
           {/* Header */}
           <div className="text-center mb-6">
-            <h1 className="text-2xl font-bold">Tailor Management System</h1>
-            <p className="text-gray-600">123 Fashion Street, Tailorville</p>
-            <p className="text-gray-600">Tel: 123-456-7890</p>
+            <h1 className="text-2xl font-bold">Grace Tailor </h1>
+            <p className="text-gray-600">Sadar Bazar Dajazl</p>
+            <p className="text-gray-600">Tel: 0308-7768551</p>
           </div>
 
           <h2 className="text-3xl font-bold text-center mb-6">INVOICE</h2>
