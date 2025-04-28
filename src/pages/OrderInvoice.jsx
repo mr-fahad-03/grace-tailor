@@ -37,7 +37,7 @@ const OrderInvoice = ({ order, onClose }) => {
           {/* Header */}
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold">Grace Tailor </h1>
-            <p className="text-gray-600">Sadar Bazar Dajazl</p>
+            <p className="text-gray-600">Sadar Bazar Dajal</p>
             <p className="text-gray-600">Tel: 0308-7768551</p>
           </div>
 
